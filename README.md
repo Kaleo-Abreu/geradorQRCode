@@ -51,15 +51,3 @@ new QRCode(document.getElementById("qrcode"), {
 
 O usuário informa um link no campo de texto e clica em "Gerar QR Code". O JavaScript utiliza a biblioteca QRCode.js para transformar o link em um código QR exibido na própria página.
 
-📚 Objetivo
-
-Este projeto foi desenvolvido como um exercício prático para aprender e aplicar conceitos de:
-
-Manipulação do DOM
-Eventos em JavaScript
-HTML e CSS
-Uso de bibliotecas externas
-Geração dinâmica de conteúdo
-📄 Licença
-
-Este projeto está disponível para fins de estudo e aprendizado.

@@ -7,75 +7,10 @@
 
     <title>Gerador de QR Code</title>
 
-    <!-- Biblioteca para gerar QR Code -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background-color: white;
-            width: 400px;
-
-            padding: 30px;
-            border-radius: 15px;
-
-            text-align: center;
-
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        h1 {
-            color: #6A0DAD;
-            margin-bottom: 25px;
-        }
-
-        input {
-            width: 90%;
-            padding: 12px;
-
-            border: 1px solid #ccc;
-            border-radius: 8px;
-
-            font-size: 16px;
-        }
-
-        button {
-            margin-top: 20px;
-
-            padding: 12px 25px;
-
-            background-color: #6A0DAD;
-            color: white;
-
-            border: none;
-            border-radius: 8px;
-
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #4d087d;
-        }
-
-        #qrcode {
-            margin-top: 30px;
-
-            display: flex;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -102,39 +37,5 @@
 
     </div>
 
-
-    <script>
-
-        function gerarQRCode() {
-
-            const link = document.getElementById("link").value;
-
-            if (link === "") {
-                alert("Digite um link!");
-                return;
-            }
-
-            // Limpa o QR Code anterior
-            document.getElementById("qrcode").innerHTML = "";
-
-            // Cria o QR Code
-            new QRCode(document.getElementById("qrcode"), {
-
-                text: link,
-
-                width: 180,
-                height: 180,
-
-                colorDark: "#6A0DAD",
-                colorLight: "#FFFFFF",
-
-                correctLevel: QRCode.CorrectLevel.H
-
-            });
-        }
-
-    </script>
-
 </body>
-
 </html>

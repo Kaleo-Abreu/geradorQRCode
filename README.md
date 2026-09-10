@@ -26,7 +26,7 @@ gerador-qrcode/
 Não é necessário instalar nenhuma dependência.
 
 Clone este repositório:
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Kaleo-Abreu/geradorQRCode.git
 
 Entre na pasta do projeto:
 cd gerador-qrcode

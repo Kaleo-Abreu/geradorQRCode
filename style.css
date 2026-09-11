@@ -62,3 +62,17 @@
             display: flex;
             justify-content: center;
         }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #qrcode, #qrcode * {
+                visibility: visible;
+            }
+            #qrcode {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
